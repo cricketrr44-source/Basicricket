@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BASICRICKET.COM — an easy guide to cricket rules, formats, skills and the spirit of the game. Founded by Kanwarpreet Singh.">
+<title>Basicricket.com | Learn Cricket</title>
+<style>
+:root{--green:#b7f34a;--deep:#071a14;--panel:#102820;--muted:#b8c9c1;--white:#f5fbf7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#071a14;color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit}.top{background:#0d261d;border-bottom:1px solid #29483b;position:sticky;top:0;z-index:10}
+.nav{max-width:1150px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:900;font-size:1.25rem;letter-spacing:.5px;text-decoration:none}.logo span{color:var(--green)}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:#d7e5dd;font-size:.92rem}nav a:hover{color:var(--green)}
+.hero{max-width:1150px;margin:auto;padding:76px 22px 62px;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h1{font-size:clamp(2.6rem,7vw,5.4rem);line-height:1.02;margin:12px 0 20px;letter-spacing:-2px}
+h1 em{font-style:normal;color:var(--green)}.lead{color:var(--muted);font-size:1.1rem;max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:800;background:var(--green);color:#102016}.btn.alt{background:transparent;border:1px solid #557365;color:var(--white)}
+.hero-card{background:linear-gradient(145deg,#183d2d,#0d241b);border:1px solid #355744;border-radius:22px;padding:28px;box-shadow:0 20px 55px #0005}
+.stumps{height:180px;display:flex;justify-content:center;align-items:center;gap:12px;position:relative}
+.stump{width:12px;height:125px;background:linear-gradient(90deg,#d5b16b,#fff0b9,#a47b3c);border-radius:5px;transform:rotate(4deg);box-shadow:0 5px 10px #0006}
+.bat{width:38px;height:150px;border-radius:18px 18px 8px 8px;background:linear-gradient(90deg,#9b642d,#e8c17c,#a66a30);transform:rotate(28deg);margin-left:28px;position:relative}
+.bat:after{content:"";position:absolute;top:-35px;left:12px;width:14px;height:42px;border-radius:7px;background:#e8dfca}
+.founder{border-top:1px solid #456351;padding-top:17px;margin-top:10px;color:var(--muted);font-size:.92rem}.founder-line{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}.founder strong{color:white;font-size:1.08rem}.founder small{color:var(--green);font-size:.75rem;letter-spacing:.3px}
+.wrap{max-width:1150px;margin:auto;padding:28px 22px 70px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:35px 0 18px}
+h2{font-size:2rem;line-height:1.15;margin:0 0 8px}h3{margin:0 0 8px}.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid #29483b;border-radius:16px;padding:20px}.card .num{color:var(--green);font-size:1.55rem;font-weight:900}
+.rule-tools{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+input,select{background:#102820;color:white;border:1px solid #456351;border-radius:10px;padding:12px 14px;font:inherit}
+input{flex:1;min-width:220px}select{min-width:170px}
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.rule{background:#0d241b;border:1px solid #29483b;border-radius:12px;padding:16px}
+.rule h3{font-size:1rem;color:var(--green)}.rule p{margin:0;color:#d1dfd7;font-size:.94rem}
+.format-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pill{display:inline-block;border:1px solid #50715d;border-radius:30px;padding:3px 10px;color:var(--green);font-size:.78rem;margin-bottom:10px}
+.gallery{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:15px}.photo-card{overflow:hidden;padding:0}.photo-card img{display:block;width:100%;height:190px;object-fit:cover}.photo-card div{padding:15px}.photo-card p{margin:0;color:var(--muted);font-size:.9rem}.glossary{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.glossary div{padding:12px 15px;background:#102820;border-radius:10px}.glossary b{color:var(--green)}
+footer{border-top:1px solid #29483b;background:#06140f;padding:28px 22px;color:var(--muted);text-align:center}
+footer a{color:var(--green)}
+.note{background:#1a3528;border-left:4px solid var(--green);padding:15px 18px;border-radius:8px;color:#dce9e1}
+.empty{display:none;color:var(--muted);padding:20px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:48px}.cards,.format-grid,.gallery{grid-template-columns:1fr}.rules,.glossary{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.section-head{display:block}}
+</style>
+</head>
+<body>
+<header class="top"><div class="nav">
+<a class="logo" href="#home">BASI<span>CRICKET</span>.COM</a>
+<nav aria-label="Main navigation"><a href="#about">About</a><a href="#rules">Cricket Rules</a><a href="#formats">Formats</a><a href="#formats">Formats</a><a href="#gallery">Photos</a><a href="#glossary">Glossary</a><a href="#sources">Official sources</a></nav>
+</div></header>
+<main id="home">
+<section class="hero">
+<div>
+<div class="eyebrow">The game. The rules. The spirit.</div>
+<h1>Know the game.<br><em>Love cricket.</em></h1>
+<p class="lead">A simple, beginner-friendly guide to understanding cricket — from scoring runs and taking wickets to match formats, umpire decisions and fair play.</p>
+<div class="actions"><a class="btn" href="#rules">Explore the rules ↓</a><a class="btn alt" href="#formats">Discover formats</a></div>
+</div>
+<div class="hero-card">
+<div class="stumps" aria-label="Illustration of cricket stumps and bat"><div class="stump"></div><div class="stump"></div><div class="stump"></div><div class="bat"></div></div>
+<div class="founder">FOUNDED BY<br><div class="founder-line"><strong>Kanwarpreet Singh</strong><small>Professional Cricketer</small></div>Founder of Basicricket.com</div>
+</div>
+</section>
+<div class="wrap">
+<section id="about">
+<div class="section-head"><div><div class="eyebrow">Welcome to Basicricket</div><h2>Cricket made easy for everyone</h2></div></div>
+<p class="muted">Cricket is played between two teams. The batting side tries to score runs, while the fielding side tries to limit runs and dismiss batters. Teams take turns batting and fielding. The team with the higher score wins, subject to the match format and result rules.</p>
+<div class="cards">
+<article class="card"><div class="num">01</div><h3>Two teams</h3><p class="muted">A standard team has 11 players on the field, with permitted substitutes under the applicable rules.</p></article>
+<article class="card"><div class="num">02</div><h3>One pitch</h3><p class="muted">The pitch is 22 yards (20.12 metres) between the wickets.</p></article>
+<article class="card"><div class="num">03</div><h3>One objective</h3><p class="muted">Score more runs than the opposition and take wickets while following the Laws and playing conditions.</p></article>
+</div>
+</section>
+
+<section id="rules">
+<div class="section-head"><div><div class="eyebrow">The essentials</div><h2>Cricket rules</h2><p class="muted">A plain-English overview of the 42 Laws of Cricket. Search a topic or filter by category.</p></div></div>
+<div class="note">Important: These are learning summaries, not the complete legal wording. International matches also use ICC playing conditions, which can vary by format and competition. Always check the current official rules for a specific match.</div>
+<div class="rule-tools"><input id="search" type="search" placeholder="Search rules (e.g. no-ball, caught, run out)..." aria-label="Search cricket rules"><select id="category" aria-label="Filter rules"><option value="all">All categories</option><option value="match">Match setup</option><option value="scoring">Scoring & deliveries</option><option value="dismissal">Dismissals</option><option value="conduct">Fair play & officials</option></select></div>
+<div class="rules" id="ruleList">
+<article class="rule" data-cat="match"><h3>1. The players</h3><p>A match is played by two teams. Each side normally has 11 players; team nomination and replacements follow the applicable rules.</p></article>
+<article class="rule" data-cat="conduct"><h3>2. The umpires</h3><p>Umpires supervise the match, make decisions, manage time and ensure the Laws and playing conditions are followed.</p></article>
+<article class="rule" data-cat="conduct"><h3>3. The scorers</h3><p>Scorers record runs, wickets, overs and other match details, checking signals and decisions with the umpires.</p></article>
+<article class="rule" data-cat="match"><h3>4. The ball</h3><p>The match ball must meet the required size, weight and condition standards. The competition decides the approved ball type.</p></article>
+<article class="rule" data-cat="match"><h3>5. The bat</h3><p>The bat must meet the permitted dimensions and construction requirements in the Laws and competition regulations.</p></article>
+<article class="rule" data-cat="match"><h3>6. The pitch</h3><p>The pitch is a rectangular area 22 yards long and 10 feet wide, with wickets at each end.</p></article>
+<article class="rule" data-cat="match"><h3>7. The creases</h3><p>Crease markings define the batters' safe ground and help umpires judge run-outs, stumpings and bowling positions.</p></article>
+<article class="rule" data-cat="match"><h3>8. The wickets</h3><p>Each wicket consists of three stumps with two bails placed on top, subject to permitted alternatives in special circumstances.</p></article>
+<article class="rule" data-cat="match"><h3>9. Preparing the playing area</h3><p>The match officials and ground staff oversee preparation and maintenance of the pitch and outfield.</p></article>
+<article class="rule" data-cat="match"><h3>10. Covering the pitch</h3><p>Pitch covering is controlled by the Laws and the match's ground and weather arrangements.</p></article>
+<article class="rule" data-cat="match"><h3>11. Intervals</h3><p>Intervals include breaks between innings and scheduled drinks or meal breaks, as set by the match arrangements.</p></article>
+<article class="rule" data-cat="match"><h3>12. Start and stop of play</h3><p>Umpires control when play starts, pauses and ends, including for weather, light or other conditions.</p></article>
+<article class="rule" data-cat="match"><h3>13. Innings</h3><p>An innings is a team's turn to bat. The number and length of innings depend on the match format.</p></article>
+<article class="rule" data-cat="match"><h3>14. The follow-on</h3><p>In certain multi-innings matches, the team batting second may be required to bat again if it trails by the required margin.</p></article>
+<article class="rule" data-cat="match"><h3>15. Declaration and forfeiture</h3><p>In formats that allow it, a captain may close their team's innings by declaration or forfeit it under the Laws.</p></article>
+<article class="rule" data-cat="scoring"><h3>16. The result</h3><p>A match result may be a win, tie or draw, or may be abandoned or have no result, depending on the format and conditions.</p></article>
+<article class="rule" data-cat="scoring"><h3>17. The over</h3><p>An over normally consists of six valid balls bowled from one end. No-balls and wides do not count as valid balls.</p></article>
+<article class="rule" data-cat="scoring"><h3>18. Scoring runs</h3><p>Batters score by running between the wickets, hitting boundaries, or receiving extras. Completed runs and boundary allowances are added to the total.</p></article>
+<article class="rule" data-cat="scoring"><h3>19. Boundaries</h3><p>A boundary is scored when the ball reaches or crosses the boundary under the Laws: normally four if it reaches the boundary after touching the ground, and six if hit over it without first touching the ground.</p></article>
+<article class="rule" data-cat="scoring"><h3>20. Dead ball</h3><p>A dead ball is no longer in play. The umpire may call it dead in situations defined by the Laws.</p></article>
+<article class="rule" data-cat="scoring"><h3>21. No-ball</h3><p>A no-ball is called for an illegal delivery, such as certain foot-faults or prohibited bowling actions. It gives the batting side an extra and may bring other penalties.</p></article>
+<article class="rule" data-cat="scoring"><h3>22. Wide ball</h3><p>A wide is called when a delivery is too far from the striker to be hit with a normal cricket shot, judged under the relevant conditions. It gives the batting side an extra.</p></article>
+<article class="rule" data-cat="scoring"><h3>23. Bye and leg-bye</h3><p>A bye is an extra when the ball passes the striker without touching the bat or body and batters run or it reaches the boundary. A leg-bye is scored after the ball contacts the striker's body, subject to the batter attempting to play or avoid the ball.</p></article>
+<article class="rule" data-cat="conduct"><h3>24. Fielder absence and substitutes</h3><p>Substitutes may field in permitted circumstances, but do not automatically gain all the rights of a nominated player.</p></article>
+<article class="rule" data-cat="match"><h3>25. Batter's innings</h3><p>A batter's innings begins when they come in to bat and ends when they are dismissed, retire under the Laws, or the innings ends.</p></article>
+<article class="rule" data-cat="conduct"><h3>26. Practice on the field</h3><p>Practice is restricted during the match and must not waste time or damage the pitch or playing area.</p></article>
+<article class="rule" data-cat="match"><h3>27. The wicket-keeper</h3><p>The wicket-keeper is the fielder positioned behind the striker's wicket and must follow rules about position and movement.</p></article>
+<article class="rule" data-cat="conduct"><h3>28. The fielder</h3><p>Fielders may stop the ball and attempt dismissals, but must not field illegally or unfairly interfere with play.</p></article>
+<article class="rule" data-cat="dismissal"><h3>29. The wicket is down</h3><p>The wicket is broken when a bail is completely removed or a stump is struck out of the ground in the manner recognised by the Laws.</p></article>
+<article class="rule" data-cat="dismissal"><h3>30. Batter out of their ground</h3><p>A batter is out of their ground when no part of their body or bat is grounded behind the popping crease at that end.</p></article>
+<article class="rule" data-cat="conduct"><h3>31. Appeals</h3><p>Fielders generally must appeal to the umpire before a batter can be given out, except where the Laws provide otherwise.</p></article>
+<article class="rule" data-cat="dismissal"><h3>32. Bowled</h3><p>The striker is out bowled if a legal delivery puts their wicket down, even if it first touches the bat or body in ways covered by the Law.</p></article>
+<article class="rule" data-cat="dismissal"><h3>33. Caught</h3><p>The striker is out caught if a fielder catches the ball fairly before it touches the ground, subject to the conditions in the Law.</p></article>
+<article class="rule" data-cat="dismissal"><h3>34. Hit the ball twice</h3><p>A batter must not deliberately strike the ball a second time, except to protect the wicket in the limited way allowed by the Law.</p></article>
+<article class="rule" data-cat="dismissal"><h3>35. Hit wicket</h3><p>The striker can be out hit wicket if they put their own wicket down in specified circumstances while receiving or setting off for a run.</p></article>
+<article class="rule" data-cat="dismissal"><h3>36. Leg before wicket (LBW)</h3><p>A batter may be out LBW if the ball hits their body rather than the bat and would have hit the stumps, subject to conditions about pitching, impact and shot offered.</p></article>
+<article class="rule" data-cat="dismissal"><h3>37. Obstructing the field</h3><p>A batter may be out if they wilfully obstruct or distract the fielding side, including by certain deliberate actions involving the ball.</p></article>
+<article class="rule" data-cat="dismissal"><h3>38. Run out</h3><p>A batter is run out if they are out of their ground and their wicket is fairly put down by the fielding side while the ball is in play.</p></article>
+<article class="rule" data-cat="dismissal"><h3>39. Stumped</h3><p>The striker may be stumped if they are out of their ground, are not attempting a run, and the wicket-keeper fairly puts the wicket down.</p></article>
+<article class="rule" data-cat="dismissal"><h3>40. Timed out</h3><p>An incoming batter must be ready within the time allowed by the applicable Laws and playing conditions, or may be given out timed out.</p></article>
+<article class="rule" data-cat="conduct"><h3>41. Unfair play</h3><p>This Law covers unfair actions such as damaging the pitch, changing the condition of the ball unfairly, time-wasting and other prohibited conduct.</p></article>
+<article class="rule" data-cat="conduct"><h3>42. Players' conduct</h3><p>Players must respect opponents, officials and the spirit of cricket. Misconduct can lead to warnings, penalties or disciplinary action.</p></article>
+</div>
+<p class="empty" id="empty">No matching rules found. Try another search.</p>
+</section>
+
+<section id="formats">
+<div class="section-head"><div><div class="eyebrow">Different ways to play</div><h2>Three major formats</h2></div></div>
+<div class="format-grid">
+<article class="card"><span class="pill">Multi-day cricket</span><h3>Test cricket</h3><p class="muted">Usually up to five days, with each team normally having two innings. A match can end in a win, tie or draw.</p></article>
+<article class="card"><span class="pill">50 overs per side</span><h3>One Day International (ODI)</h3><p class="muted">Each team normally has one innings of up to 50 overs. The side scoring more runs wins, with special rules for interruptions and ties.</p></article>
+<article class="card"><span class="pill">20 overs per side</span><h3>Twenty20 (T20)</h3><p class="muted">Each team normally has one innings of up to 20 overs. It is a shorter, fast-paced format with format-specific playing conditions.</p></article>
+</div>
+</section>
+
+<section id="gallery">
+<div class="section-head"><div><div class="eyebrow">Feel the game</div><h2>Cricket in pictures</h2><p class="muted">The energy of the stadium, the skill of batting and the excitement of match day.</p></div></div>
+<div class="gallery">
+<article class="card photo-card"><img src="https://images.ai11.in/insecure/rs%3Afill%3A2560%3A0/g%3Ano/q%3A75/aHR0cHM6Ly9tZWRpYS5haTExLmluL21lZGlhL2ZpbGVyX3B1YmxpYy9iYy8xNC9iYzE0NWNiYi1iYmYyLTQ5NDUtOTllMi0wYjg4ZTU3OGYwZWIvaGFyZGlrX3JhYmFkc y5wbmc.webp" alt="Cricket batter playing a shot in a stadium" loading="lazy"><div><h3>Batting action</h3><p>Timing, balance and skill come together at the crease.</p></div></article>
+<article class="card photo-card"><img src="https://images.unsplash.com/photo-1774600958518-11ebfe8d0434?auto=format&fit=crop&fm=jpg&q=80&w=1400" alt="Cricket ground and stadium crowd in Delhi" loading="lazy"><div><h3>The stadium</h3><p>The atmosphere that makes match day special.</p></div></article>
+<article class="card photo-card"><img src="https://media.ai11.in/media/filer_public_thumbnails/filer_public/21/05/21059567-8071-4cbe-a25f-7c23d078a58e/papua-new-guinea-vs-vanuatu-19th-match-super-six-2026-33987-banner.png__1200x630_ALIAS-share_crop_subsampling-2_upscale.webp" alt="Cricket batter preparing to play under stadium lights" loading="lazy"><div><h3>Match-day excitement</h3><p>Every delivery brings a new moment in the game.</p></div></article>
+</div>
+</section>
+
+<section id="glossary">
+<div class="section-head"><div><div class="eyebrow">Cricket language</div><h2>Useful cricket terms</h2></div></div>
+<div class="glossary">
+<div><b>Wicket:</b> The stumps and bails; also commonly used to mean a dismissal.</div>
+<div><b>Over:</b> A set of six valid deliveries by one bowler.</div>
+<
